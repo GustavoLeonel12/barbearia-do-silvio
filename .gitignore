@@ -9,5 +9,5 @@ yarn-debug.log*
 yarn-error.log*
 
 # GitHub Pages deploy
-.github/workflows/
+# Note: keep GitHub Actions workflows tracked by Git
 gh-pages
