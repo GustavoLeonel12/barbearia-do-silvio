@@ -90,11 +90,12 @@
 
 .team-photo {
   width: 100%;
-  height: auto;
-  max-height: 250px;
-  object-fit: contain;
+  aspect-ratio: 4 / 5;
+  max-height: 320px;
+  object-fit: cover;
+  object-position: center;
   margin-bottom: var(--space-sm);
-  border-radius: 0;
+  border-radius: 12px;
 }
 
 .team-name {
@@ -474,10 +475,14 @@
 }
 
 /* CTA Intermediário Section */
+#historia {
+  padding: var(--space-lg) 0;
+}
+
 .cta-mid-section {
-  padding: var(--space-lg) var(--space-md);
-  margin-top: calc(-1 * var(--space-md));
-  margin-bottom: var(--space-md);
+  padding: calc(var(--space-lg) * 1.5) var(--space-md);
+  margin-top: 0;
+  margin-bottom: calc(var(--space-md) * 1.5);
 }
 
 .cta-mid-card {

@@ -1,0 +1,34 @@
+name: Deploy to HostGator
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch: # Permite rodar manualmente pelo painel do GitHub se necessário
+
+jobs:
+  web-deploy:
+    name: Deploy Website
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obter o código mais recente
+        uses: actions/checkout@v4
+
+      - name: Sincronizar arquivos com HostGator via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./
+          # IMPORTANTE: A HostGator geralmente usa a pasta 'public_html/' para o domínio principal.
+          # Se a sua conta FTP estiver configurada para apontar direto para a pasta do site, mude para './'.
+          # Se for um subdomínio ou domínio adicional, informe a pasta correspondente (ex: 'public_html/seu-subdominio/').
+          server-dir: public_html/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/project_upload.zip
+            **/upload_to_github.ps1

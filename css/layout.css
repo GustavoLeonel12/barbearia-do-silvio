@@ -8,50 +8,66 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 var(--space-md);
+  padding: 0 clamp(1rem, 2.5vw, 2rem);
   z-index: 100;
-  transition: var(--transition-smooth);
+  transition: background 0.35s ease, height 0.35s ease, padding 0.35s ease, border 0.35s ease;
+  background: rgba(5, 5, 5, 0.28);
+  backdrop-filter: blur(18px);
   border-bottom: 1px solid transparent;
 }
 
 .header .logo {
   display: flex;
   align-items: center;
-  transition: var(--transition-smooth);
+  transition: transform 0.35s ease;
 }
 
 .header .logo img {
-  height: 75px; /* Tamanho muito mais impactante no desktop */
+  height: 68px;
   width: auto;
   object-fit: contain;
-  transition: var(--transition-smooth);
-  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+  transition: height 0.35s ease, filter 0.35s ease;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.35));
 }
 
 .header.scrolled {
-  height: 80px; /* Reduz altura do header no scroll */
-  background: rgba(5, 5, 5, 0.9);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-  border-bottom: 1px solid var(--glass-border);
+  height: 80px;
+  background: rgba(5, 5, 5, 0.92);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .header.scrolled .logo img {
-  height: 50px; /* Reduz o logo ao rolar a página */
+  height: 52px;
 }
 
 .nav-links {
   display: flex;
-  gap: var(--space-md);
+  align-items: center;
+  gap: clamp(1rem, 2vw, 1.6rem);
 }
 
 .nav-link {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
+  color: #ffffff;
+  font-size: 0.95rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: var(--transition-fast);
+  letter-spacing: 1.3px;
+  transition: color 0.25s ease, transform 0.25s ease;
   position: relative;
+}
+
+.nav-link[href="#historia"] {
+  color: var(--accent-gold);
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
+.nav-link[href="#historia"]:hover {
+  color: var(--accent-gold);
 }
 
 .nav-link::after {
@@ -132,7 +148,7 @@
   line-height: 1.1;
 }
 
-.hero-title span {
+.hero-title .hero-highlight {
   color: var(--accent-gold);
   font-style: italic;
 }
@@ -148,13 +164,20 @@
 /* Stats/History */
 .history-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: var(--space-xl);
+  justify-items: center;
+  text-align: center;
   align-items: center;
+}
+
+.history-grid > div {
+  width: min(100%, 860px);
 }
 
 .stats-container {
   display: flex;
+  justify-content: center;
   gap: var(--space-md);
   margin-top: var(--space-md);
 }
@@ -209,10 +232,8 @@
 
 .slide-img {
   width: 100%;
-  max-width: 400px;
-  height: 500px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 20px;
   display: block;
 }
 
