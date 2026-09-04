@@ -47,8 +47,8 @@ const HOURS_RESPONSES = [
 // EQUIPE
 const TEAM_RESPONSES = [
   "Nossa equipe é formada por profissionais preparados para entregar um atendimento de alto nível e um corte alinhado com o estilo de cada cliente.",
-  "Contamos com um time de barbeiros altamente qualificados (como o Sílvio, a Elenilda e a Karol), especialistas em fade, barba e cortes clássicos. Quer agendar com algum deles?",
-  "Nossos profissionais são especialistas em visagismo e atendimento de elite. A Karol cuida dos detalhes de barba, a Elenilda manda muito no fade e o Sílvio é o nosso Master Barber. Vamos agendar?"
+  "Contamos com um time de barbeiros altamente qualificados (como o Sílvio e a Karol), especialistas em fade, barba e cortes clássicos. Quer agendar com algum deles?",
+  "Nossos profissionais são especialistas em visagismo e atendimento de elite. A Karol cuida dos detalhes de barba e o Sílvio é o nosso Master Barber. Vamos agendar?"
 ];
 
 // SERVIÇOS E VALORES
@@ -149,7 +149,7 @@ export function initChatbot() {
         response = HOURS_RESPONSES[Math.floor(Math.random() * HOURS_RESPONSES.length)];
       }
       // Prioridade 4: Equipe / Barbeiros
-      else if (text.includes('barbeiro') || text.includes('equipe') || text.includes('profissionais') || text.includes('silvio') || text.includes('sílvio') || text.includes('elenilda') || text.includes('karol') || text.includes('time')) {
+      else if (text.includes('barbeiro') || text.includes('equipe') || text.includes('profissionais') || text.includes('silvio') || text.includes('sílvio') || text.includes('karol') || text.includes('time')) {
         response = TEAM_RESPONSES[Math.floor(Math.random() * TEAM_RESPONSES.length)];
       }
       // Prioridade 5: Preço / Valores / Serviços
