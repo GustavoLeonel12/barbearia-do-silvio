@@ -89,14 +89,20 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }
 
+.team-photo-wrap {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: var(--space-sm);
+}
+
 .team-photo {
   width: 100%;
-  height: auto;
-  max-height: none;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   object-position: center top;
-  margin-bottom: var(--space-sm);
-  border-radius: 12px;
+  display: block;
 }
 
 .team-name {
