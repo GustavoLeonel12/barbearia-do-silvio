@@ -69,7 +69,7 @@
 .team-grid {
   display: grid;
   gap: var(--space-md);
-  grid-template-columns: repeat(auto-fit, minmax(250px, 340px));
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
 }
 
@@ -91,10 +91,10 @@
 
 .team-photo {
   width: 100%;
-  aspect-ratio: 4 / 5;
-  max-height: 320px;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: center top;
   margin-bottom: var(--space-sm);
   border-radius: 12px;
 }
