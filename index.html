@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Open Graph -->
+  <title>Barbearia do Sílvio | Barbearia Premium</title>
+  <meta name="description" content="Experimente o mais alto padrão em cortes clássicos e barbas com estilo. Uma experiência premium focada em detalhes, sofisticação e excelência.">
+  <meta property="og:title" content="Barbearia do Sílvio | Barbearia Premium">
+  <meta property="og:description" content="Experimente o mais alto padrão em cortes clássicos e barbas com estilo.">
+  <meta property="og:image" content="/imgs/og-image.jpg">
+  <meta property="og:type" content="website">
+  google-site-verification: googlea75b7982918a822f.html
+
+  <!-- Google Fonts: Cinzel (Heading) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- SwiperJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader">
+    <div class="loader-logo">BARBEARIA DO SILVIO</div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+  </div>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="imgs/logotipo.png" alt="SÍLVIO" style="height: 80px; width: auto; object-fit: contain;"/>
+    </div>
+    <nav class="nav-links">
+      <a href="#historia" class="nav-link">Nossa História</a>
+      <a href="#portfolio" class="nav-link">Portfólio</a>
+      <a href="#avaliacoes" class="nav-link">Experiência</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </nav>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-bg" data-speed="0.5">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Interior da barbearia de luxo">
+      </div>
+      <div class="hero-overlay"></div>
+      
+      <div class="hero-content">
+        <h1 class="hero-title">O estilo que<br>acompanha<br>a sua <span class="hero-highlight">história</span></h1>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="#agendamento" class="btn">Agendar Horário</a>
+          <a href="#portfolio" class="btn btn-outline">Ver Portfólio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nossa História & Timeline -->
+    <section id="historia" class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Tradição & Inovação</span>
+        <h2 class="section-title">A Arte da Barbearia</h2>
+      </div>
+      
+      <div class="history-grid">
+        <div>
+          <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 1.1rem;">A Barbearia do Silvio nasceu com um propósito simples:
+oferecer cortes de qualidade, atendimento respeitoso e um ambiente onde cada cliente se sentisse em casa.</p>
+<p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 1.1rem;">Ao longo desses 9 anos, atendemos milhares de pessoas e construímos uma história baseada em confiança, dedicação e paixão pelo que fazemos.</p>
+          <p style="color: var(--text-secondary); margin-bottom: 2rem;">Combinados técnicas clássicas com as mais recentes tendências de visagismo.</p>
+          
+          <div class="stats-container">
+            <div class="stat-box">
+              <span class="stat-number">9</span>
+              <span style="color: var(--text-muted); font-size: 0.9rem; text-transform: uppercase;">Anos de História</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">5k</span>
+              <span style="color: var(--text-muted); font-size: 0.9rem; text-transform: uppercase;">Clientes Satisfeitos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Conversão Intermediária (CTA) -->
+    <section class="cta-mid-section container">
+      <div class="glass-card cta-mid-card">
+        <div class="cta-mid-content">
+          <span class="cta-mid-subtitle">Agende seu Ritual</span>
+          <h2 class="cta-mid-title">Seu horário, seu estilo.</h2>
+          <p class="cta-mid-text">Atendimento personalizado, ambiente sofisticado e experiência de alto nível. Agende agora seu horário na Barbearia do Silvio.</p>
+          <a href="https://booksy.com/pt-br/32106_barbearia-do-silvio_barbearias_978208_barueri#ba_s=seo" target="_blank" rel="noopener noreferrer" class="btn btn-cta">
+            Agendar Horário
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfólio Premium em Carrossel -->
+    <section id="portfolio" class="portfolio-section">
+      <div class="section-header" style="padding: 0 var(--space-md);">
+        <span class="section-subtitle">Nossa Galeria</span>
+        <h2 class="section-title">Obras de Arte</h2>
+      </div>
+
+      <!-- Swiper Container -->
+      <div class="swiper portfolio-slider">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="imgs/1.jpeg" class="slide-img" alt="Corte Premium 1">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="imgs/2.jpeg" class="slide-img" alt="Corte Premium 2">
+          </div>
+
+    
+          <div class="swiper-slide">
+            <img src="imgs/4.jpeg" class="slide-img" alt="Corte Premium 4">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="imgs/5.jpeg" class="slide-img" alt="Corte Premium 5">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="imgs/6.jpeg" class="slide-img" alt="Corte Premium 6">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="imgs/7.jpeg" class="slide-img" alt="Corte Premium 7">
+          </div>
+
+        </div>
+
+        <!-- Swiper Navigation -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- Swiper Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Avaliações -->
+    <section id="avaliacoes" class="container">
+      <div class="section-header">
+        <span class="section-subtitle">O que dizem</span>
+        <h2 class="section-title">A Experiência</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="glass-card">
+          <div class="review-stars">★★★★★</div>
+          <p style="color: var(--text-secondary); font-style: italic;">"Uma experiência incomparável. O cuidado com os detalhes e a atmosfera do lugar me fizeram sentir como um verdadeiro VIP. Recomendo de olhos fechados."</p>
+          <div class="review-author">
+            <div class="author-avatar">GL</div>
+            <div>
+              <strong style="display: block;">Gustavo Leonel</strong>
+              <span style="color: var(--text-muted); font-size: 0.8rem;">Cliente há 7 anos</span>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card">
+          <div class="review-stars">★★★★★</div>
+          <p style="color: var(--text-secondary); font-style: italic;">"Sofisticação pura. Desde a recepção até o resultado final do corte, tudo é executado com uma precisão cirúrgica."</p>
+          <div class="review-author">
+            <div class="author-avatar">LV</div>
+            <div>
+              <strong style="display: block;">Lucas Viana</strong>
+              <span style="color: var(--text-muted); font-size: 0.8rem;">Cliente há 6 meses</span>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card">
+          <div class="review-stars">★★★★★</div>
+          <p style="color: var(--text-secondary); font-style: italic;">"Ambiente premium, profissionais que sabem exatamente o que estão fazendo. A melhor barbearia que já frequentei."</p>
+          <div class="review-author">
+            <div class="author-avatar">MC</div>
+            <div>
+              <strong style="display: block;">Mateus Costa</strong>
+              <span style="color: var(--text-muted); font-size: 0.8rem;">Cliente há 1 ano</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nossa Equipe -->
+    <section id="equipe" class="team-section container">
+      <div class="section-header">
+        <span class="section-subtitle">Nosso Time</span>
+        <h2 class="section-title">A Equipe</h2>
+      </div>
+      <div class="team-grid">
+        <!-- Card 1 -->
+        <div class="glass-card team-card">
+          <img src="imgs/Silvio1.jpeg" alt="Sílvio" class="team-photo">
+          <h3 class="team-name">Sílvio</h3>
+          <p class="team-role">Master Barber</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="glass-card team-card">
+          <img src="imgs/Karol.jpeg" alt="Karol" class="team-photo">
+          <h3 class="team-name">Karol</h3>
+          <p class="team-role">Master Barber</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato e Mapa -->
+    <section id="contato" class="container" style="background: var(--bg-secondary); border-radius: 20px; padding: var(--space-xl) var(--space-md);">
+      <div class="section-header">
+        <span class="section-subtitle">Garanta o seu horário</span>
+        <h2 class="section-title">Agendamento Exclusivo</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="glass-card" style="display: flex; flex-direction: column; justify-content: center; text-align: center; padding: 3rem 2rem;">
+          <h3 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 1rem; color: var(--accent-gold);">Aguardamos seu agendamento.</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem;">
+            Realize seu agendamento de forma rápida e prática através do nosso sistema digital Booksy. Escolha seu profissional e horário preferido.
+          </p>
+          <a href="https://booksy.com/pt-br/32106_barbearia-do-silvio_barbearias_978208_barueri#ba_s=seo" target="_blank" rel="noopener noreferrer" class="btn" style="font-size: 1.1rem; padding: 18px 36px; width: 100%;">
+            Reservar pelo Booksy
+          </a>
+        </div>
+
+        <div>
+          <!-- Localização Info -->
+          <div class="glass-card" style="margin-bottom: var(--space-sm);">
+            <strong style="color: var(--accent-gold); display: block; margin-bottom: 0.5rem;">Endereço de Luxo</strong>
+            <p style="color: var(--text-secondary);">Av. Batatais, 263 — Jardim Itaparica<br>Barueri, SP - 06447-090</p>
+            <strong style="color: var(--accent-gold); display: block; margin-top: 1rem; margin-bottom: 0.5rem;">Horário de Funcionamento</strong>
+            <p style="color: var(--text-secondary);">Terça a Sexta: 09:00 às 20:00<br>Sábado: 09:00 às 18:00</p>
+          </div>
+          
+          <!-- Google Maps Container -->
+          <div class="map-container" id="map" style="background: #1a1a1a;">
+            <!-- Mapa Estático Premium que redireciona ao clicar (Substituído automaticamente por mapa interativo quando a API Key estiver ativa) -->
+            <a href="https://www.google.com/maps/search/?api=1&query=Av.+Batatais,+263+-+Jardim+Itaparica,+Barueri+-+SP,+06447-090" target="_blank" rel="noopener noreferrer" class="static-map-link">
+              <img src="imgs/map_static_dark.png" alt="Localização da Barbearia do Sílvio" class="static-map-img" onerror="this.style.display='none'; document.getElementById('map-fallback-text').style.display='flex';">
+              <div id="map-fallback-text" style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center; background: #111; color: var(--accent-gold); font-family: var(--font-body); font-weight: bold; text-align: center; padding: 20px;">
+                Visualizar Localização no Google Maps<br>(Clique para abrir)
+              </div>
+              <div class="map-overlay">
+                <div class="map-btn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Abrir no Google Maps
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="logo" style="margin-bottom: 1rem;">
+        <img src="imgs/logotipo.png" alt="SÍLVIO" style="height: 40px; width: auto; object-fit: contain;">
+      </div>
+      <p>&copy; 2026 Barbearia do Sílvio. Todos os direitos reservados.</p>
+      <p style="margin-top: 0.5rem; font-size: 0.8rem;">Design by @gustavooleonel</p>
+    </div>
+  </footer>
+
+  <!-- Chatbot Premium -->
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-toggle" id="chatToggle">
+      <img src="imgs/chatbot.png" alt="Chatbot" style="width: 116px; height: 175px; object-fit: contain; border: none; background: transparent; border-radius: 0; filter: none;"/>
+    </div>
+    
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-header">
+        <div style="display:flex; align-items:center; gap: 10px;">
+          <div class="chat-avatar" style="background: transparent;">
+            <img src="imgs/chatbot.png" alt="Bot" style="width: 100%; height: 100%; object-fit: contain; border-radius: 0;"/>
+          </div>
+          <div>
+            <strong style="display:block; font-family: var(--font-heading); color: var(--accent-gold);">Assistente Virtual</strong>
+            <span style="font-size: 0.75rem; color: #aaa; display:flex; align-items:center; gap:4px;">
+              <span style="width:6px;height:6px;background:#25D366;border-radius:50%;display:inline-block;"></span> Online
+            </span>
+          </div>
+        </div>
+        <button class="chat-close" id="chatClose">✕</button>
+      </div>
+      
+      <div class="chat-messages" id="chatMessages">
+        <div class="message bot">
+          Olá! Sou o assistente de inteligência artificial da Barbearia do Sílvio. Como posso ajudar você hoje com seu agendamento ou dúvidas?
+        </div>
+      </div>
+      
+      <div class="chat-input-area">
+        <input type="text" class="chat-input" id="chatInput" placeholder="Digite sua mensagem...">
+        <button class="chat-send" id="chatSend">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- GSAP & Plugins -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <!-- Lenis (Smooth Scroll) -->
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+
+  <!-- SwiperJS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- App Modules -->
+  <script type="module" src="js/main.js"></script>
+  
+  <!-- Google Maps API Loader -->
+  <script>
+    (function(){
+      // ==========================================
+      // ADICIONAR API KEY DO GOOGLE MAPS AQUI
+      // ==========================================
+      // Para ativar o mapa real e interativo, substitua 'YOUR_API_KEY' pela sua chave de API real do Google Maps.
+      const key = 'YOUR_API_KEY'; // ADICIONAR API KEY DO GOOGLE MAPS AQUI
+      
+      if (!key || key === 'YOUR_API_KEY') {
+        console.info('Google Maps: Utilizando o mapa estático premium (sem chave de API ativa).');
+        return;
+      }
+      
+      const script = document.createElement('script');
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${key}&callback=initMap`;
+      script.async = true;
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  </script>
+</body>
+</html>
