@@ -90,9 +90,8 @@
 
 .team-photo {
   width: 100%;
-  aspect-ratio: 3 / 4;
+  height: auto;
   object-fit: cover;
-  object-position: center top;
   display: block;
   border-radius: 8px;
   margin-bottom: var(--space-sm);
