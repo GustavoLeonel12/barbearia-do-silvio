@@ -69,6 +69,8 @@
   display: grid;
   gap: var(--space-md);
   grid-template-columns: repeat(2, 1fr);
+  max-width: 800px;
+  margin: 0 auto;
   align-items: start;
 }
 
@@ -88,7 +90,9 @@
 
 .team-photo {
   width: 100%;
-  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
   display: block;
   border-radius: 8px;
   margin-bottom: var(--space-sm);
